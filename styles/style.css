@@ -6,6 +6,20 @@ h1{
     line-height: 91px;
     font-weight: 300;
     text-align: center;
+    color: #636060;
+}
+h2{
+    margin-top: 12px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    float: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
 }
 
 ul {
@@ -96,7 +110,7 @@ body{
     
     html,body { 
     height: 100%; 
-    overflow: hidden; 
+   
     } 
     
     /* gets the actual input out of the way; 
@@ -115,6 +129,7 @@ body{
     -ms-user-select: none; 
     user-select: none; 
     left: 0px; 
+    top: 25px;
     height:50px; 
     width: 50px; 
     display: block; 
@@ -233,4 +248,30 @@ body{
         display: block;
         margin: 10px auto;
     }
+}
+@media screen and (max-width:500px)  {
+    h1{
+        line-height: 48px;
+        font-size: 38px;
+    }
+}
+
+
+
+article{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    margin-top: 50px;
+    margin: 0 auto;
+}
+
+figure{
+   margin: 0 auto;
+}
+ #works {
+    width: 330px;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
 }
