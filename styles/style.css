@@ -1,4 +1,6 @@
 
+         /* GENERAL STYLES   */
+
 h1{
     margin-top: 150px;
     font-family: 'Open Sans', sans-serif;
@@ -33,6 +35,8 @@ li {
     display: inline-block;
 }
 
+
+                /*  HEADER STYLES  */
 header{
     opacity: 0;
 }
@@ -256,7 +260,10 @@ body{
     }
 }
 
-
+#h1-h2_wrapper {
+    width: 75%;
+    margin: 0 auto;
+}
 
 article{
     display: flex;
