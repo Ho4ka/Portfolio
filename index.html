@@ -10,7 +10,7 @@
 <body>
     <header id="header">
        <img class="logo" src="logo.png" alt="logo">
-      <nav>
+      <nav id="main-nav">
           <ul>
             <li><a href="#home">work</a></li>
             <li><a href="#home">about</a></li>
@@ -18,6 +18,18 @@
           </ul>
       </nav>
     </header>
+    <div id="mobile-menu">
+    <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+    <label for="drawer-toggle" id="drawer-toggle-label"></label>
+    <nav id="drawer">
+       <ul>
+          <li><a href="#">Menu Item</a></li>
+          <li><a href="#">Menu Item</a></li>
+          <li><a href="#">Menu Item</a></li>
+          <li><a href="#">Menu Item</a></li>
+       </ul>
+    </nav>
+</div>
     <script src="js/main.js"></script>
 </body>
 </html>
