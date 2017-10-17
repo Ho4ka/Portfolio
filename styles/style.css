@@ -271,14 +271,52 @@ article{
     justify-content: center;
     margin-top: 50px;
     margin: 0 auto;
+    padding-top: 50px;
 }
 
 figure{
    margin: 0 auto;
 }
+figcaption {
+    padding-left: 35px;
+    padding: 10px;
+    margin-left: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    width: 310px;
+    background: rgb(239, 239, 239);
+}
  #works {
     width: 330px;
     margin: 0 auto;
     display: block;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
 }
+
+@media screen and (max-width: 992px){
+   article {
+       width: 100%;
+   }
+   #works {
+    width: 100%;
+   }
+   figcaption {
+       width: 92%;
+   }
+}
+
+@media screen and (max-width: 768px){
+    article {
+       flex-direction: column;
+    }
+    #works {
+     width: 100%;
+     padding-top: 0;
+    }
+    figcaption {
+        width: 97.1%;
+    }
+ }
