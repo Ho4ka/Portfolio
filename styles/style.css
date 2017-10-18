@@ -61,6 +61,16 @@ nav{
    right: 150px;
 }
 
+.active {
+    
+    -webkit-transition: color 100ms ease;
+    transition: color 100ms ease;
+    border-style: none none solid;
+    border-width: 2px;
+    border-color: #ffe00c;
+    color: #9f9f9f;
+  
+}
 .logo {
     position: relative;
   left: 200px;
@@ -75,18 +85,14 @@ nav ul li a {
     text-decoration: none;
 } 
 nav ul li a:hover {
-    padding-bottom: 15px;
+    transition: color 100ms ease;
     border-style: none none solid;
     border-width: 2px;
     border-color: #ffe00c;
     color: #9f9f9f;
-    
+   
 }
 
-
-body{
-    height: 1200px;
-}
 
 /*  Menu for small screen */
 
@@ -260,6 +266,9 @@ body{
     }
 }
 
+
+          /*   STYLES FOR ARTICLE SECTIONS     */
+
 #h1-h2_wrapper {
     width: 75%;
     margin: 0 auto;
@@ -283,6 +292,8 @@ figure{
    margin: 0 auto;
    width: 100%;
    padding-top: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
 }
 figcaption {
     padding-left: 35px;
@@ -290,7 +301,7 @@ figcaption {
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     font-weight: 600;
-    width: 94%;
+    width: 100%;
     margin: 0 auto ;
     background: rgb(239, 239, 239);
 }
@@ -298,8 +309,8 @@ figcaption {
     width: 100%;
     margin: 0 auto;
     display: block;
-    padding-left: 10px;
-    padding-right: 10px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
     padding-top: 10px;
 }
 
@@ -323,7 +334,9 @@ figcaption {
      width: 100%;
      padding-top: 0;
     }
-    figcaption {
-        width: 96%;
-    }
+    
  }
+
+
+
+ 
