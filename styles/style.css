@@ -24,6 +24,15 @@ h2{
     text-align: center;
 }
 
+h3 {
+    padding-left: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -314,6 +323,17 @@ figcaption {
     padding-top: 10px;
 }
 
+.textblock{
+    height: 30px;
+    margin-top: -6px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    font-size: 13px;
+    font-weight: 100;
+    color: rgb(94, 94, 94);
+}
+
 @media screen and (max-width: 992px){
    article {
        width: 100%;
@@ -321,9 +341,7 @@ figcaption {
    #works {
     width: 100%;
    }
-   figcaption {
-     
-   }
+   
 }
 
 @media screen and (max-width: 768px){
@@ -337,6 +355,32 @@ figcaption {
     
  }
 
+/*   INTRO-CONTAINER AND SECTION BRANDS STYLES  */
+
+ .intro-container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 940px;
+    padding-top: 60px;
+ }
+ section.brands{
+    width: 80%;
+    margin: 0 auto ;
+ }
+.brands-img {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    section.brands{
+        width: 100%;
+    }
+}
 
 
- 
+
+footer{
+    height: 100px;
+    margin-top: 75px;
+    background-color: #f0f0f0;
+}
