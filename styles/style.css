@@ -124,6 +124,7 @@ nav ul li a:hover {
     margin: 0; 
     padding: 0; 
     -webkit-text-size-adjust: none; 
+    z-index: 2;
     } 
     
     /* Makes sure that everything is 100% height */ 
