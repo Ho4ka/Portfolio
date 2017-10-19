@@ -401,4 +401,7 @@ footer{
     footer{
         width: 100%;
     }
+    .contacts{
+        padding-right: 10px;
+    }
 }
