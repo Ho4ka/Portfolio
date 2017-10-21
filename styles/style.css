@@ -388,6 +388,12 @@ footer{
     margin: 0 auto;
     margin-top: 75px;
 }
+.logo-footer{
+    width: 180px;
+    height: 70px;
+    position: relative ;
+    top: 15px
+}
 .contacts {
     padding-top: 45px;
     padding-right: 50px;
@@ -501,7 +507,7 @@ section.skills>h1{
     margin-top: 30px;
 }
 .skills-wrapper {
-    width: 90%;
+    width: 70%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -548,7 +554,7 @@ img.icon-mobile {
 
 .divider2{
     display: block;
-    width: 90%;
+    width: 70%;
     height: 25px;
     margin: 30px auto;
     padding-top: 0px;
@@ -567,6 +573,7 @@ img.icon-mobile {
 .exp-row{
     width: 33.3%;
     margin: 0 auto;
+    color:  rgb(113, 113, 113);
 }
 
 .exp-row ul {
@@ -589,6 +596,100 @@ img.icon-mobile {
     }
     .exp-row{
         align-self: center;
+        width: 100%;
+    }
+}
+
+.exp-container2{
+    width: 70%;
+    display: flex;
+    margin:  0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-top: 20px;
+}
+.exp-block1{
+    text-align: left;
+    width: 50%;
+}
+.exp-block2{
+   width: 50%;
+    margin: 0 auto;
+}
+.strong{
+    font-weight: bold;
+}
+@media screen and (max-width: 768px){
+    .exp-container2{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .exp-block1{
+        width: 100%;
+        text-align: center;
+    }
+    .exp-block2{
+        width: 100%;
+    }
+
+}
+
+
+
+/*    STYLES FOR CONTACT.HTML        */
+section.icon-container {
+    display: flex;
+    width: 70%;
+    margin: 50px auto;
+}
+
+.lets-catch-up-text{
+    display: block;
+    width: 65%;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    clear: both;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.circleicon{
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    text-align: center;
+}
+.contact-icon{
+    margin: 0 auto;
+}
+.txt{
+    display: block;
+    width: 65%;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    clear: both;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+}
+.map {
+    margin: 0 auto;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px){
+    .map{
         width: 100%;
     }
 }
