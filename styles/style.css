@@ -132,6 +132,7 @@ nav ul li a:hover {
     
     html,body { 
     height: 100%; 
+    background: white;
    
     } 
     
@@ -380,7 +381,7 @@ figcaption {
     }
 }
 
-
+       /* FOOTER STYLES */
 
 footer{
     height: 100px;
@@ -411,7 +412,10 @@ footer{
 
 
 
+                    /*   STYLES FOR ABOUT HTML   */
 
+
+ 
 section.itsme{
     width: 100%;
     display: flex ;
