@@ -34,10 +34,7 @@ h3 {
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
+    
 }
 
 li {
@@ -67,7 +64,6 @@ header{
 nav{
    float: right;
    position: relative;
-   top: 15px;
    right: 150px;
 }
 
@@ -498,4 +494,101 @@ article.text-about-me {
     border-style: solid;
     border-width: 0px 0px 1px;
     border-color: #9f9f9f #9f9f9f #e0e0e0;
+}
+
+section.skills>h1{
+    font-size: 35px;
+    margin-top: 30px;
+}
+.skills-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.icon {
+    align-self: center ;
+    display: block;
+    height: 48px;
+    width: 48px;
+    margin-right: auto;
+    margin-left: auto;
+}
+img.icon-mobile {
+    width: 48px;
+}
+.space-between {
+    display: flex;
+    min-height: 1px;
+    flex-direction: column;
+    width: 25%;
+   
+}
+.space-between {
+    text-align: center;
+    line-height: 22px;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(124, 124, 124);
+    padding: 10px;
+}
+.space-between h3 {
+    color: #333;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px){
+    .skills-wrapper{
+        flex-direction: column;
+    }
+    .space-between{
+        width: 100%;
+    }
+}
+
+.divider2{
+    display: block;
+    width: 90%;
+    height: 25px;
+    margin: 30px auto;
+    padding-top: 0px;
+    clear: both;
+    border-style: solid;
+    border-width: 0px 0px 1px;
+    border-color: #9f9f9f #9f9f9f #e0e0e0;
+    
+}
+.exp-container{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.exp-row{
+    width: 33.3%;
+    margin: 0 auto;
+}
+
+.exp-row ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+.exp-row ul li {
+    display: list-item ;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    list-style-type: disc;
+}
+
+@media screen and (max-width: 768px){
+    .exp-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .exp-row{
+        align-self: center;
+        width: 100%;
+    }
 }
