@@ -113,7 +113,7 @@ nav ul li a:hover {
     -o-box-sizing: border-box; 
     box-sizing: border-box; 
 }
-#show{
+.show{
     -webkit-transition: 1.25s ease-in-out; 
     -moz-transition: 1.25s ease-in-out; 
     -o-transition: 1.25s ease-in-out; 
@@ -330,6 +330,14 @@ figcaption {
     /* padding-left: 10px;
     padding-right: 10px; */
     padding-top: 10px;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+#works:hover{
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
 }
 
 .textblock{
