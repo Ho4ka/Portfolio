@@ -121,7 +121,7 @@ nav ul li a:hover {
     opacity: 0;
 }
 
-#drawer, {
+#drawer {
     /* adds animation for all transitions */ 
     -webkit-transition: .25s ease-in-out; 
     -moz-transition: .25s ease-in-out; 
@@ -130,7 +130,7 @@ nav ul li a:hover {
     margin: 0; 
     padding: 0; 
     -webkit-text-size-adjust: none; 
-    z-index: 2;
+    z-index: 102;
     } 
     
     /* Makes sure that everything is 100% height */ 
