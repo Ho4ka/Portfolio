@@ -118,7 +118,7 @@ nav ul li a:hover {
     -moz-transition: 1.25s ease-in-out; 
     -o-transition: 1.25s ease-in-out; 
     transition: 1.25s ease-in-out; 
-    opacity: 0;
+    
 }
 
 #drawer {
