@@ -22,6 +22,7 @@ h2{
     font-style: normal;
     font-weight: 300;
     text-align: center;
+    color: rgb(123, 123, 123);
 }
 
 h3 {
@@ -112,7 +113,15 @@ nav ul li a:hover {
     -o-box-sizing: border-box; 
     box-sizing: border-box; 
 }
-#drawer{
+#show{
+    -webkit-transition: 1.25s ease-in-out; 
+    -moz-transition: 1.25s ease-in-out; 
+    -o-transition: 1.25s ease-in-out; 
+    transition: 1.25s ease-in-out; 
+    opacity: 0;
+}
+
+#drawer, {
     /* adds animation for all transitions */ 
     -webkit-transition: .25s ease-in-out; 
     -moz-transition: .25s ease-in-out; 
@@ -652,7 +661,7 @@ section.icon-container {
     margin-left: auto;
     clear: both;
     font-family: 'Open Sans', sans-serif;
-    color: #333;
+    color: #7b7b7b;
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
@@ -690,6 +699,12 @@ section.icon-container {
 
 @media screen and (max-width: 768px){
     .map{
+        width: 100%;
+    }
+    .icon-container{
+        flex-direction: column;
+    }
+    .circleicon{
         width: 100%;
     }
 }

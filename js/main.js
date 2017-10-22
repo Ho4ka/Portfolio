@@ -20,3 +20,12 @@ timeOutForDisolayHeader();
 
 
 
+var box = document.getElementById('show');
+
+    window.addEventListener('scroll', function() {
+
+      if (document.body.scrollTop > 300) {
+        box.style.opacity = "1";
+      }
+
+    });
