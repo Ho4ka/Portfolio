@@ -32,6 +32,7 @@ h3 {
     font-weight: 600;
     line-height: 20px;
     margin-top: 10px;
+    color: green;
 }
 
 ul {
@@ -74,7 +75,7 @@ nav{
     transition: color 100ms ease;
     border-style: none none solid;
     border-width: 2px;
-    border-color: #ffe00c;
+    border-color: green;
     color: #9f9f9f;
   
 }
@@ -95,7 +96,7 @@ nav ul li a:hover {
     transition: color 100ms ease;
     border-style: none none solid;
     border-width: 2px;
-    border-color: #ffe00c;
+    border-color: green;
     color: #9f9f9f;
    
 }
@@ -113,13 +114,7 @@ nav ul li a:hover {
     -o-box-sizing: border-box; 
     box-sizing: border-box; 
 }
-.show{
-    -webkit-transition: 1.25s ease-in-out; 
-    -moz-transition: 1.25s ease-in-out; 
-    -o-transition: 1.25s ease-in-out; 
-    transition: 1.25s ease-in-out; 
-    
-}
+
 
 #drawer {
     /* adds animation for all transitions */ 
@@ -301,17 +296,22 @@ article{
     padding-top: 20px;
 }
 
-/* #article2{
+.anime{
     opacity: 0;
-    transition: opacity 1000ms, transform 1000ms;
+    /* transition: opacity 1000ms, transform 1000ms; */
     transform: translateX(0px) translateY(0px);
-} */
+    -webkit-transition: 0.25s ease-in-out; 
+    animation-duration:2s;
+    animation-fill-mode: forwards;
+}
 figure{
    margin: 0 auto;
    width: 100%;
    padding-top: 20px;
    padding-left: 10px;
    padding-right: 10px;
+   position: relative;
+ 
 }
 figcaption {
     padding-left: 35px;
@@ -330,14 +330,13 @@ figcaption {
     /* padding-left: 10px;
     padding-right: 10px; */
     padding-top: 10px;
-    -webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+    /* -webkit-filter: grayscale(100%);
+	filter: grayscale(100%); */
+
 }
 #works:hover{
-    -webkit-filter: grayscale(0);
-	filter: grayscale(0);
+    /* -webkit-filter: grayscale(0);
+	filter: grayscale(0); */
 }
 
 .textblock{
@@ -463,7 +462,7 @@ section.about-me h1{
     display: block;
     width: 20%;
     margin: 50px auto;
-    border-bottom: 8px solid #ffe00c;
+    border-bottom: 8px solid green;
 }
 
 @media screen and (max-width: 768px){
@@ -556,7 +555,7 @@ img.icon-mobile {
     padding: 10px;
 }
 .space-between h3 {
-    color: #333;
+    color: green;
     font-weight: 600;
 }
 
@@ -635,6 +634,7 @@ img.icon-mobile {
 }
 .strong{
     font-weight: bold;
+    color: green;
 }
 @media screen and (max-width: 768px){
     .exp-container2{
@@ -693,7 +693,7 @@ section.icon-container {
     margin-left: auto;
     clear: both;
     font-family: 'Open Sans', sans-serif;
-    color: #333;
+    color: green;
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
@@ -716,3 +716,52 @@ section.icon-container {
         width: 100%;
     }
 }
+
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    background: rgba(5, 5, 5, 0.74);
+    overflow: hidden;
+    width: 93.4%;
+    height: 0;
+    transition: .5s ease;
+  }
+figure:hover .overlay {
+    height: 50%;
+  }
+
+.text {
+    white-space: nowrap; 
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    opacity:1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+@keyframes show{
+    0% {
+     opacity:0;
+    }
+  
+    100% {
+      opacity:1;
+    }
+  }
+  
+  

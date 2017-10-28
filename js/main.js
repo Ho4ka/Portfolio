@@ -1,13 +1,28 @@
 
 
-// window.onscroll = function() {
-//     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-//         console.log(scrolled);
-//      if(scrolled === 300) {
-//          document.getElementById('article2').style.opacity = '1';
-//      }
-     
-//   }
+
+function show(){
+window.addEventListener('scroll', function(e){ 
+    let test = window.scrollY;
+    
+        if(test >200||test === 300) {
+       
+          let getBlocks = document.getElementsByClassName('anime');
+        
+        for (var i = 0; i< getBlocks.length; i++){
+         (function(i) {
+            setTimeout(function(){ 
+                getBlocks[i].style.animationName="show";
+            }, 100 + (300 * i));
+        })(i);
+    }
+         }
+ })
+}
+
+show();
+
+
 function timeOutForDisolayHeader() {
    const timeoutID = window.setTimeout(displayHeader, 1000);
 }
@@ -19,13 +34,3 @@ timeOutForDisolayHeader();
 
 
 
-
-let box = document.getElementsByClassName('show');
-
-    window.addEventListener('scroll', function() {
-        for(var i = 0 ; i<box.length; i++ ){
-      if (document.body.scrollTop > 300) {
-        box[i].style.opacity = "1";
-      }
-    }
-    });
